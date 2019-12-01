@@ -1,0 +1,17 @@
+name       : cgpt
+version    : 12607
+release    : 1
+source     :
+    - https://chromium.googlesource.com/chromiumos/platform/vboot_reference/+archive/refs/heads/release-R79-12607.B.tar.gz : 5a3addc4b6b3b115805ad19662b9e7751c2c86f55a19259492edf21791e2b3c0
+license    : custom:chromiumos
+summary    : Utility for ChromeOS-specific GPT partitions.
+description: |
+    Utility for ChromeOS-specific GPT partitions.
+builddeps  :
+   - pyyaml
+   - trousers
+build      : |
+    %make -j$(nproc --all) cgpt
+install    : |
+    install -Dm755 $workdir/build/cgpt/cgpt $installdir/usr/bin/cgpt
+

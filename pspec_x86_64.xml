@@ -1,0 +1,32 @@
+<PISI>
+    <Source>
+        <Name>cgpt</Name>
+        <Packager>
+            <Name>Alexander J. Koskovich</Name>
+            <Email>zvnexus@outlook.com</Email>
+        </Packager>
+        <License>custom:chromiumos</License>
+        <Summary xml:lang="en">Utility for ChromeOS-specific GPT partitions.</Summary>
+        <Description xml:lang="en">Utility for ChromeOS-specific GPT partitions.
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://getsol.us/sources/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>cgpt</Name>
+        <Summary xml:lang="en">Utility for ChromeOS-specific GPT partitions.</Summary>
+        <Description xml:lang="en">Utility for ChromeOS-specific GPT partitions.
+</Description>
+        <Files>
+            <Path fileType="executable">/usr/bin/cgpt</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2019-12-01</Date>
+            <Version>12607</Version>
+            <Comment>Packaging update</Comment>
+            <Name>Alexander J. Koskovich</Name>
+            <Email>zvnexus@outlook.com</Email>
+        </Update>
+    </History>
+</PISI>
